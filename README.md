@@ -26,7 +26,8 @@ This project demonstrates real-world Git workflows along with Docker integration
 - `git log --oneline --graph` → visualize history
 - `git diff` → identify changes
 - `git blame` → track code changes
-
+![Git Log](screenshots/git-log.png)
+![Docker Run](screenshots/docker-run.png)
 ---
 
 ## 🐳 Docker Usage
