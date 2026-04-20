@@ -1,43 +1,60 @@
-# 🚀 DevOps Real Project
+# 🚀 DevOps Test Project (Git + Docker + CI/CD + Kubernetes)
 
-This project demonstrates real-world Git workflows along with Docker integration.
-
----
-
-## 📌 Features
-- Git branching (feature-based workflow)
-- Merge conflict creation & resolution
-- Git debugging using log, diff, blame
-- Dockerized Python application
+This project demonstrates an end-to-end DevOps workflow:
+Git → Docker → CI/CD → Kubernetes deployment.
 
 ---
 
-## 🧠 Git Concepts Demonstrated
+## 📌 Project Overview
 
-### 🔹 Branching Strategy
-- Created feature branch: `feature-logging`
-- Merged into main branch
+In this project, I implemented:
 
-### 🔹 Merge Conflict Resolution
-- Conflict created intentionally between `main` and `feature-logging`
-- Resolved manually
+- Git feature branch workflow
+- Merge conflict resolution
+- Docker containerization
+- CI/CD pipeline using GitHub Actions
+- Docker image push to Docker Hub
+- Kubernetes deployment using KIND
 
-### 🔹 Debugging with Git
-- `git log --oneline --graph` → visualize history
-- `git diff` → identify changes
-- `git blame` → track code changes
----
-Git Logs screenshot - 
-
-![Git Log](screenshots/git-log.png)
----
-Docker app run screenshot - 
-
-![Docker Run](screenshots/docker-run.png)
 ---
 
-## 🐳 Docker Usage
+## 🔄 Complete Workflow
 
-### Build Image
+
+---
+
+## 🧠 What I Learned
+
+### 🔹 Git
+- Branching strategy (`feature-*`)
+- Merge conflicts and resolution
+- Debugging using:
+  - `git log`
+  - `git diff`
+  - `git blame`
+
+### 🔹 Docker
+- Writing Dockerfile
+- Building images
+- Running containers
+
+### 🔹 CI/CD (GitHub Actions)
+- Creating workflow YAML
+- Triggering pipeline on push
+- Using secrets securely
+- Automating Docker build & push
+
+### 🔹 Kubernetes
+- Writing deployment.yaml
+- Deploying application using KIND
+- Pulling image from Docker Hub
+
+---
+
+## 🛠️ Step-by-Step Setup Guide
+
+### 1️⃣ Clone Repo
+
 ```bash
-docker build -t devops-app .
+git clone https://github.com/AbhishekGoleOps/DevOps-test-project.git
+cd DevOps-test-project
